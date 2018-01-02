@@ -4,9 +4,9 @@ This file explains dependencies and scripts under [package.json](package.json)
 
 ## Content
 
-1. Scripts
-2. DevDependencies
-3. Dependencies
+1. [Scripts](#scripts)
+2. [DevDependencies](#dev-dependencies)
+3. [Dependencies](#dependencies)
 
 ### General Info
 
@@ -14,7 +14,7 @@ This file explains dependencies and scripts under [package.json](package.json)
   
     *Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of           transforming, bundling, or packaging just about any resource or asset.*
 
-### 1. Scripts
+## Scripts
 
 ```javascript
 "scripts": {
@@ -48,7 +48,9 @@ This file explains dependencies and scripts under [package.json](package.json)
   * *--progress: Output running progress to console.*
   
   
-### 2. DevDependencies
+## Dev Dependencies
+
+  This dependencies are only used while developing the project
   
   * [Axios](https://github.com/axios/axios)
   
@@ -129,7 +131,7 @@ It allows you to natively compile .scss files to css at incredible speed and aut
   
     Webpack development server 
     
-## 3. Dependencies
+## Dependencies
 
   This are needed dependencies on production
   
