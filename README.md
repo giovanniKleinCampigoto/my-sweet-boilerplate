@@ -1,5 +1,7 @@
 # React Boilerplate
 
+This file explains dependencies and scripts under [package.json](package.json)
+
 ## Content
 
 1. Scripts
