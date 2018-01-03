@@ -26,7 +26,7 @@ This file explains dependencies and scripts under [package.json](package.json)
 #### 1.1 "dev": "webpack-dev-server --progress --colors --inline --hot",
 
   Builds the development server [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
-  
+   
   **Options:**
   
  * *--progress: Output running progress to console.*
@@ -42,6 +42,10 @@ This file explains dependencies and scripts under [package.json](package.json)
 #### 1.2  "build": "webpack --progress -p"
   
   Builds webpack modules, that are mapped under *[webpack.config.js](webpack.config.js)*
+  
+  **IMPORTANT!!**
+  
+   If you did build and want to move to development again, remeber to delete all contents of the public folder! Otherwise changes won't be compiled
  
   **Options:**
   
@@ -78,6 +82,21 @@ This file explains dependencies and scripts under [package.json](package.json)
        
        Presets serve the purpose of taking sintax e.g (ES6, React, ...) and transpiling it to basic Javascript sintax.
        
+       * [Preset Env](https://github.com/babel/babel/tree/master/packages/babel-preset-env)
+       
+       * [Preset React](https://babeljs.io/docs/plugins/preset-react/)
+       
+     * Babel Plugin Transform
+       
+       Generally to transform plain Javascript into ES6 sintax stuff...
+       
+       * [Class Properties](https://babeljs.io/docs/plugins/transform-class-properties/)
+       * [Object Rest Spread](https://babeljs.io/docs/plugins/transform-object-rest-spread/)
+       * [Runtime](https://www.npmjs.com/package/babel-plugin-transform-runtime)
+         
+        
+      
+       
 * [Copy Webpack Plugin](https://github.com/webpack-contrib/copy-webpack-plugin)
   
   Copies individual files or entire directories to the build directory.
@@ -103,6 +122,10 @@ It allows you to natively compile .scss files to css at incredible speed and aut
   
   A JavaScript library for building user interfaces
   
+  * [React DOM](https://www.npmjs.com/package/react-dom)
+  
+    This package serves as the entry point of the DOM-related rendering paths.
+  
 * [React Redux](https://github.com/reactjs/react-redux)
     
   Official React bindings for Redux.
@@ -110,11 +133,7 @@ It allows you to natively compile .scss files to css at incredible speed and aut
  * [Redux](https://redux.js.org/)
     
    Redux is a predictable state container for JavaScript apps.
-    
-* [Redux Multi](https://github.com/ashaffer/redux-multi)
-    
-  Dispatch multiple actions from one action creator
-   
+      
  * [Redux Saga](https://github.com/redux-saga/redux-saga)
   
     Redux Saga is a library that aims to make application side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, simple to test, and better at handling failures.
@@ -139,7 +158,19 @@ It allows you to natively compile .scss files to css at incredible speed and aut
     
     Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
 
+  * [React Router Dom](https://reacttraining.com/react-router/web)
+    
+    Manages application routing, see the docs for more info.
+    
+  * [React Router Redux](https://github.com/reactjs/react-router-redux)
+  
+    You're a smart person. You use Redux to manage your application state. You use React Router to do routing. Good boi. But the two libraries don't coordinate. You want to do time travel with your application state, but React Router doesn't navigate between pages when you replay actions. It controls an important part of application state: the URL.
+  
   * [Reacstrap](http://reactstrap.github.io/)
   
     Stateless React Components for Bootstrap 4.
+    
+  * [Redux Logger](https://github.com/evgenyrodionov/redux-logger)
+    
+    LogRocket is a production Redux logging tool that lets you replay problems as if they happened in your own browser. Instead of guessing why errors happen, or asking users for screenshots and log dumps, LogRocket lets you replay Redux actions + state, network requests, console logs, and see a video of what the user saw.
 
