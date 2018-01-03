@@ -1,5 +1,5 @@
 {
-  "name": "api_github",
+  "name": "sweet_boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -37,6 +37,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
-    "reactstrap": "^5.0.0-alpha.4"
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "reactstrap": "^5.0.0-alpha.4",
+    "redux-logger": "^3.0.6"
   }
 }

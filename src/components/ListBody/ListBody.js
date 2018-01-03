@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Link, Route } from 'react-router-dom'
 
 import { Container, Table, Jumbotron } from 'reactstrap'
 
-import './ListUsers.scss'
+import './ListBody.scss'
 
-class ListUsers extends Component {
+class ListBody extends Component {
     state = {}
 
     componentDidMount() {
@@ -32,16 +33,13 @@ class ListUsers extends Component {
             return (
                 <tr key={index}>
                     <td>{val.name}</td>
-                    <td>{val.email}</td>
-                    <td>{val.phone}</td>
-                    <td>{val.website}</td>
-                    <td>{val.company.name}</td>
                 </tr>
             )
         });
     }
 
     render() {
+        
         return (
             <div>
                 <Container>
@@ -49,10 +47,6 @@ class ListUsers extends Component {
                         <thead>
                             <tr>
                                 <th>Nome</th>
-                                <th>E-mail</th>
-                                <th>Telefone</th>
-                                <th>Nome</th>
-                                <th>Nome da empresa</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -71,4 +65,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(ListUsers)
+export default connect(mapStateToProps)(ListBody)

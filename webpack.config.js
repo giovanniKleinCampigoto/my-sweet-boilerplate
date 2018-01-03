@@ -7,10 +7,12 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + '/public',
-    filename: './bundle.min.js'
+    filename: 'bundle.min.js'
   },
   devServer: {
-    contentBase: __dirname + '/public'
+    contentBase: __dirname + '/public',
+    historyApiFallback: true,
+    port: 8080
   },
   resolve: {
     extensions: [' ', '.js', '.jsx', 'scss']
